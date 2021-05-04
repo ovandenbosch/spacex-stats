@@ -5,7 +5,7 @@ const {
   GraphQLBoolean,
   GraphQLList,
   GraphQLSchema,
-  GraphQLID
+  GraphQLID,
 } = require("graphql");
 
 const axios = require("axios");
@@ -40,7 +40,37 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(LaunchType),
       resolve(parent, args) {
         return axios
-          .get("https://api.spacex.land/rest/launches-past")
+          .get("https://api.spacex.land/rest/launches-past?sort=launch_year")
+          .then((res) => res.data);
+      },
+    },
+    launch: {
+      type: LaunchType,
+      args: {
+        id: { type: GraphQLInt },
+      },
+      resolve(parent, args) {
+        return axios
+          .get(`https://api.spacex.land/rest/launch/${args.id}`)
+          .then((res) => res.data);
+      },
+    },
+    rockets: {
+      type: new GraphQLList(LaunchType),
+      resolve(parent, args) {
+        return axios
+          .get("https://api.spacex.land/rest/launches-past?sort=launch_year")
+          .then((res) => res.data);
+      },
+    },
+    rocket: {
+      type: LaunchType,
+      args: {
+        id: { type: GraphQLInt },
+      },
+      resolve(parent, args) {
+        return axios
+          .get(`https://api.spacex.land/rest/launch/${args.id}`)
           .then((res) => res.data);
       },
     },
@@ -48,5 +78,5 @@ const RootQuery = new GraphQLObjectType({
 });
 
 module.exports = new GraphQLSchema({
-    query: RootQuery
-})
+  query: RootQuery,
+});
