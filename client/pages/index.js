@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from '@apollo/client/react'
-import Launches from '../components/launches'
+import Launches from '../components/Launches'
 
 const client = new ApolloClient({
   uri: "http://localhost:5000/graphql",
