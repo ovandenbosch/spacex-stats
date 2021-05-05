@@ -500,6 +500,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^2.20.3":
+  version: 2.20.3
+  resolution: "commander@npm:2.20.3"
+  checksum: b73428e97de7624323f81ba13f8ed9271de487017432d18b4da3f07cfc528ad754bbd199004bd5d14e0ccd67d1fdfe0ec8dbbd4c438b401df3c4cc387bfd1daa
+  languageName: node
+  linkType: hard
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -584,10 +591,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cors@npm:^2.8.5":
+  version: 2.8.5
+  resolution: "cors@npm:2.8.5"
+  dependencies:
+    object-assign: ^4
+    vary: ^1
+  checksum: c83e88c15428b87ff55853ec5ce961b650c7aa3de536aadebbeb2334872d86a8be57165a77996f3b746366c950c2d51624a9b76b88fb7f18d178eca051ca1ae2
+  languageName: node
+  linkType: hard
+
 "crypto-random-string@npm:^2.0.0":
   version: 2.0.0
   resolution: "crypto-random-string@npm:2.0.0"
   checksum: 7bc19f6cafe3194a434198c9414941cc36d874e1f85b6fcba573b5623f77a440c0a10a94c0d0da26d7d23d85b6fe07354e589ef1a0fe2d7b32e0bab9e70ca4c1
+  languageName: node
+  linkType: hard
+
+"cssfilter@npm:0.0.10":
+  version: 0.0.10
+  resolution: "cssfilter@npm:0.0.10"
+  checksum: 0a5cdc209e35ff0db9b0271846162ad9c0fdd7e612b217b88cfe6f1da5428b156369f17bab7f5f32f9d49b66daec912c188ef836735f499d87cafd824f3e9308
   languageName: node
   linkType: hard
 
@@ -1029,6 +1053,26 @@ fsevents@~2.3.1:
   version: 4.2.6
   resolution: "graceful-fs@npm:4.2.6"
   checksum: 84d39c7756892553da990a9db7e45f844b3309b37b5a00174cbb4748476f2250c54f24594d4d252f64f085c65c2fdac7c809419bf6d55f0e6e42eb07ac0f5bf2
+  languageName: node
+  linkType: hard
+
+"graphql-playground-html@npm:^1.6.29":
+  version: 1.6.29
+  resolution: "graphql-playground-html@npm:1.6.29"
+  dependencies:
+    xss: ^1.0.6
+  checksum: 3958fd648b255ee3605c2e5c4899cc2b4eb593d4538dfaf82886fa032ee4bf81a52860adfd8ec6b8fba5af23397270dba96d51efae26a20e3f79c3af86775563
+  languageName: node
+  linkType: hard
+
+"graphql-playground-middleware-express@npm:^1.7.22":
+  version: 1.7.22
+  resolution: "graphql-playground-middleware-express@npm:1.7.22"
+  dependencies:
+    graphql-playground-html: ^1.6.29
+  peerDependencies:
+    express: ^4.16.2
+  checksum: aa3c7cdca1f429bc6b6c2597290738141b015cf9a04ea859c2d9b58a825534dc677e4b1db51f9a0e12b76c447314301038d9a10a0bde2c1efe0a24201ee1b3e9
   languageName: node
   linkType: hard
 
@@ -1810,7 +1854,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.1.0":
+"object-assign@npm:^4, object-assign@npm:^4.1.0":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: 66cf021898fc1b13ea573ea8635fbd5a76533f50cecbc2fcd5eee1e8029af41bcebe7023788b6d0e06cbe4401ecea075d972f78ec74467cdc571a0f1a4d1a081
@@ -2293,9 +2337,11 @@ resolve@^1.10.0:
   dependencies:
     axios: ^0.21.1
     concurrently: ^6.0.2
+    cors: ^2.8.5
     express: ^4.17.1
     express-graphql: ^0.12.0
     graphql: ^15.5.0
+    graphql-playground-middleware-express: ^1.7.22
     nodemon: ^2.0.7
   languageName: unknown
   linkType: soft
@@ -2680,7 +2726,7 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"vary@npm:~1.1.2":
+"vary@npm:^1, vary@npm:~1.1.2":
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 591f059f727ac1ba0d97cb7767f8583a03fcbb07db7be2b7dce838ede520ec0e958a41cb19077054769077fdc49a9b9a2dc391c83426bfee89c054b8cc7404bf
@@ -2750,6 +2796,18 @@ resolve@^1.10.0:
   version: 4.0.0
   resolution: "xdg-basedir@npm:4.0.0"
   checksum: 928953cb7dda8e2475932f748847a3aae751f44864a0067b03e5ca66820a36e1e9ffb647f9b06fb68ebcb0b9d06d5aee630717a1d2501be14cec99f82efa2fe6
+  languageName: node
+  linkType: hard
+
+"xss@npm:^1.0.6":
+  version: 1.0.8
+  resolution: "xss@npm:1.0.8"
+  dependencies:
+    commander: ^2.20.3
+    cssfilter: 0.0.10
+  bin:
+    xss: bin/xss
+  checksum: d16f355b9c7ae0529a7c13976f27945e3e46d0fc44c8f725d2c0e48e4e873d623d90d08202aedc4441bc6ee87d2695dda2659abdb3af14fa9428c18df7193d73
   languageName: node
   linkType: hard
 

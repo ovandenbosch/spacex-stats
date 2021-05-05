@@ -39,9 +39,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["axios", "npm:0.21.1"],
             ["concurrently", "npm:6.0.2"],
+            ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["express-graphql", "virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:0.12.0"],
             ["graphql", "npm:15.5.0"],
+            ["graphql-playground-middleware-express", "virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:1.7.22"],
             ["nodemon", "npm:2.0.7"]
           ],
           "linkType": "SOFT",
@@ -599,6 +601,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["commander", [
+        ["npm:2.20.3", {
+          "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-b73428e97d.zip/node_modules/commander/",
+          "packageDependencies": [
+            ["commander", "npm:2.20.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["concat-map", [
         ["npm:0.0.1", {
           "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-554e28d9ee.zip/node_modules/concat-map/",
@@ -696,11 +707,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["cors", [
+        ["npm:2.8.5", {
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-c83e88c154.zip/node_modules/cors/",
+          "packageDependencies": [
+            ["cors", "npm:2.8.5"],
+            ["object-assign", "npm:4.1.1"],
+            ["vary", "npm:1.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["crypto-random-string", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/crypto-random-string-npm-2.0.0-8ab47992ef-7bc19f6caf.zip/node_modules/crypto-random-string/",
           "packageDependencies": [
             ["crypto-random-string", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cssfilter", [
+        ["npm:0.0.10", {
+          "packageLocation": "./.yarn/cache/cssfilter-npm-0.0.10-28e06ce546-0a5cdc209e.zip/node_modules/cssfilter/",
+          "packageDependencies": [
+            ["cssfilter", "npm:0.0.10"]
           ],
           "linkType": "HARD",
         }]
@@ -1256,6 +1287,39 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/graphql-npm-15.5.0-65986c56be-789cdcb069.zip/node_modules/graphql/",
           "packageDependencies": [
             ["graphql", "npm:15.5.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graphql-playground-html", [
+        ["npm:1.6.29", {
+          "packageLocation": "./.yarn/cache/graphql-playground-html-npm-1.6.29-d4693ee0dc-3958fd648b.zip/node_modules/graphql-playground-html/",
+          "packageDependencies": [
+            ["graphql-playground-html", "npm:1.6.29"],
+            ["xss", "npm:1.0.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graphql-playground-middleware-express", [
+        ["npm:1.7.22", {
+          "packageLocation": "./.yarn/cache/graphql-playground-middleware-express-npm-1.7.22-d62f48b2ea-aa3c7cdca1.zip/node_modules/graphql-playground-middleware-express/",
+          "packageDependencies": [
+            ["graphql-playground-middleware-express", "npm:1.7.22"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:1.7.22", {
+          "packageLocation": "./.yarn/$$virtual/graphql-playground-middleware-express-virtual-e95b802e4e/0/cache/graphql-playground-middleware-express-npm-1.7.22-d62f48b2ea-aa3c7cdca1.zip/node_modules/graphql-playground-middleware-express/",
+          "packageDependencies": [
+            ["graphql-playground-middleware-express", "virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:1.7.22"],
+            ["@types/express", null],
+            ["express", "npm:4.17.1"],
+            ["graphql-playground-html", "npm:1.6.29"]
+          ],
+          "packagePeers": [
+            "@types/express",
+            "express"
           ],
           "linkType": "HARD",
         }]
@@ -2672,9 +2736,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["spacex-stats", "workspace:."],
             ["axios", "npm:0.21.1"],
             ["concurrently", "npm:6.0.2"],
+            ["cors", "npm:2.8.5"],
             ["express", "npm:4.17.1"],
             ["express-graphql", "virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:0.12.0"],
             ["graphql", "npm:15.5.0"],
+            ["graphql-playground-middleware-express", "virtual:ebc8bfed26aa96a5c7fc417d5cf3ddfa8a02815253007c6cf8a6bccb3412ed1c1d9aead848868e44e493fcee6fa0a454c4c33113b8da46c43f486d0ccc59e4d8#npm:1.7.22"],
             ["nodemon", "npm:2.0.7"]
           ],
           "linkType": "SOFT",
@@ -3173,6 +3239,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xdg-basedir-npm-4.0.0-ed08d380e2-928953cb7d.zip/node_modules/xdg-basedir/",
           "packageDependencies": [
             ["xdg-basedir", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["xss", [
+        ["npm:1.0.8", {
+          "packageLocation": "./.yarn/cache/xss-npm-1.0.8-7219f18929-d16f355b9c.zip/node_modules/xss/",
+          "packageDependencies": [
+            ["xss", "npm:1.0.8"],
+            ["commander", "npm:2.20.3"],
+            ["cssfilter", "npm:0.0.10"]
           ],
           "linkType": "HARD",
         }]
