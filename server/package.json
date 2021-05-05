@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "yarn dev --preifx ../client"
+    "client": "cd ../client && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "author": "Oliver van den Bosch",
   "license": "ISC",
