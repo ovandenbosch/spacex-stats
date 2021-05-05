@@ -1,6 +1,6 @@
-import { useQuery, gql } from "@apollo/client";
-import LaunchItem from './LaunchItem'
-import MissionKey from './MissionKey'
+import { gql, ApolloClient, InMemoryCache } from "@apollo/client";
+import LaunchItem from "./LaunchItem";
+import MissionKey from "./MissionKey";
 
 const LAUNCHES_QUERY = gql`
   query LaunchesQuery {
@@ -13,25 +13,64 @@ const LAUNCHES_QUERY = gql`
   }
 `;
 
-function LaunchQuery() {
-  const { loading, error, data } = useQuery(LAUNCHES_QUERY);
-
-  if (loading) return <h4>Loading...</h4>;
-  if (error) console.log(error);
-
-  return <>
-    {data.launches.map(launch => (
-      <LaunchItem key={launch.id} launch={launch} />
-    ))}
-  </>;
-}
-
-export default function Launches() {
+export default function Launches({breh}) {
+  console.log(breh);
   return (
     <>
       <h1 className="display-4 my-3">Launches</h1>
       <MissionKey />
-      <LaunchQuery />
+      <p>Hello</p>
+
+      {/* {data.launches.map((launch) => (
+        <LaunchItem key={launch.id} launch={launch} />
+      ))} */}
     </>
   );
 }
+
+// export function LaunchQuery() {
+//   const { loading, error, data } = useQuery(LAUNCHES_QUERY);
+//   if (loading) return <h4>Loading...</h4>;
+//   if (error) console.log(error);
+
+//   return (
+//     <>
+//       {data.launches.map((launch) => (
+//         <LaunchItem key={launch.id} launch={launch} />
+//       ))}
+//     </>
+//   );
+// }
+
+export async function getStaticProps() {
+  // const client = new ApolloClient({
+  //   uri: "http://localhost:5000/graphql",
+  //   cache: new InMemoryCache(),
+  // });
+
+  // const { data, error, loading } = await client.query({
+  //   query: gql`
+  //     query LaunchesQuery {
+  //       launches {
+  //         id
+  //         mission_name
+  //         launch_date_local
+  //         launch_success
+  //       }
+  //     }
+  //   `,
+  // });
+
+  // if (loading) {
+  //   return <h4>Loading ...</h4>;
+  // }
+  // if (error) console.log(error);
+
+  // console.log(data);
+  return {
+    props: {
+      breh: ["hello"],
+    },
+  };
+}
+
