@@ -1,10 +1,16 @@
 import "bootswatch/dist/cyborg/bootstrap.min.css";
 
-
 function MyApp({ Component, pageProps }) {
   return (
-  <Component {...pageProps} />
-  )
+    <>
+      <img
+        src="/spacexlogo.png"
+        alt="SpaceX"
+        style={{ width: 300, display: "block", margin: "auto" }}
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
