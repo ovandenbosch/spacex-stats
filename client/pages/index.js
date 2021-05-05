@@ -1,15 +1,16 @@
 import Head from "next/head";
-// import { ApolloClient } from "@apollo/client";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from '@apollo/client/react'
 import Launches from '../components/launches'
 
 const client = new ApolloClient({
   uri: "http://localhost:5000/graphql",
+  cache: new InMemoryCache()
 });
 
 export default function Home() {
   return (
-    <ApolloProvider client={client}>
+    
       <div>
         <Head>
           <title>SpaceX Launches</title>
@@ -19,6 +20,7 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <ApolloProvider client={client}>
         <div className="container">
           <img
             src="/spacexlogo.png"
@@ -27,7 +29,7 @@ export default function Home() {
           />
           <Launches />
         </div>
+        </ApolloProvider>
       </div>
-    </ApolloProvider>
   );
 }
