@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
 import Launches from "../components/Launches";
 
@@ -8,8 +8,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export default function Home({ breh }) {
-  console.log("breh: ", breh);
+export default function Home({ data }) {
+  console.log("hello: ", data);
   return (
     <div>
       <Head>
@@ -27,9 +27,33 @@ export default function Home({ breh }) {
 }
 
 export async function getStaticProps() {
+  const client = new ApolloClient({
+    uri: "http://localhost:5000/graphql",
+    cache: new InMemoryCache(),
+  });
+
+  const { data, error, loading } = await client.query({
+    query: gql`
+      query LaunchesQuery {
+        launches {
+          id
+          mission_name
+          launch_date_local
+          launch_success
+        }
+      }
+    `,
+  });
+
+  if (loading) {
+    return <h4>Loading ...</h4>;
+  }
+  if (error) console.log(error);
+
+  console.log(data);
   return {
     props: {
-      breh: [],
+      data: data,
     },
   };
 }

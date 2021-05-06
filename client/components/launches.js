@@ -13,8 +13,8 @@ const LAUNCHES_QUERY = gql`
   }
 `;
 
-export default function Launches({breh}) {
-  console.log(breh);
+export default function Launches({hello}) {
+  console.log(hello);
   return (
     <>
       <h1 className="display-4 my-3">Launches</h1>
@@ -42,35 +42,4 @@ export default function Launches({breh}) {
 //   );
 // }
 
-export async function getStaticProps() {
-  // const client = new ApolloClient({
-  //   uri: "http://localhost:5000/graphql",
-  //   cache: new InMemoryCache(),
-  // });
-
-  // const { data, error, loading } = await client.query({
-  //   query: gql`
-  //     query LaunchesQuery {
-  //       launches {
-  //         id
-  //         mission_name
-  //         launch_date_local
-  //         launch_success
-  //       }
-  //     }
-  //   `,
-  // });
-
-  // if (loading) {
-  //   return <h4>Loading ...</h4>;
-  // }
-  // if (error) console.log(error);
-
-  // console.log(data);
-  return {
-    props: {
-      breh: ["hello"],
-    },
-  };
-}
 
