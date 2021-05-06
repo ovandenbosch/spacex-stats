@@ -1,15 +1,9 @@
 import Head from "next/head";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
-import { ApolloProvider } from "@apollo/client/react";
+import { gql } from "@apollo/client";
+import client from "../apollo-client";
 import Launches from "../components/Launches";
 
-const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
-  cache: new InMemoryCache(),
-});
-
-export default function Home({ data }) {
-  console.log("hello: ", data);
+export default function Home({ data, loading }) {
   return (
     <div>
       <Head>
@@ -17,21 +11,14 @@ export default function Home({ data }) {
         <meta name="description" content="View all historic SpaceX launches" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ApolloProvider client={client}>
-        <div className="container">
-          <Launches />
-        </div>
-      </ApolloProvider>
+      <div className="container">
+        <Launches data={data} loading={loading} />
+      </div>
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const client = new ApolloClient({
-    uri: "http://localhost:5000/graphql",
-    cache: new InMemoryCache(),
-  });
-
   const { data, error, loading } = await client.query({
     query: gql`
       query LaunchesQuery {
@@ -45,15 +32,12 @@ export async function getStaticProps() {
     `,
   });
 
-  if (loading) {
-    return <h4>Loading ...</h4>;
-  }
   if (error) console.log(error);
 
-  console.log(data);
   return {
     props: {
       data: data,
+      loading: loading,
     },
   };
 }
