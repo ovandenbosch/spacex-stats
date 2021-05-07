@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import Moment from "react-moment";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function LaunchItem({
   launch: { id, mission_name, launch_date_local, launch_success },
@@ -25,7 +25,9 @@ export default function LaunchItem({
           </p>
         </div>
         <div className="col-md-3">
-          <Link href={`/launch/${id}`} className="btn btn-primary">Launch Details</Link>
+          <Link href={`/launch/${id}`}>
+            <a className="btn btn-secondary">Launch Details</a>
+          </Link>
         </div>
       </div>
     </div>
