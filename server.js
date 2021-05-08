@@ -16,7 +16,7 @@ app.use(
   })
 );
 
-/// Testq
+/// Testqs
 
 // Playground route
 app.get("/playground", expressPlayground({ endpoint: "graphql"}));
