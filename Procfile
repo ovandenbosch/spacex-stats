@@ -1,3 +1,3 @@
 heroku scale web=0
-bot: yarn install && node server.js
+bot: yarn add express && node server.js
 heroku scale bot=1
