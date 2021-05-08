@@ -49,7 +49,7 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(LaunchType),
       resolve(parent, args) {
         return axios
-          .get("https://api.spacex.land/rest/launches-past?")
+          .get("https://api.spacex.land/rest/launches-past?sort=launch_year")
           .then((res) => res.data);
       },
     },

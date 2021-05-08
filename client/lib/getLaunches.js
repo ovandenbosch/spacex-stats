@@ -1,5 +1,10 @@
-import client from "../apollo-client";
 import { gql } from "@apollo/client";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: "http://localhost:5000/graphql",
+  cache: new InMemoryCache(),
+});
 
 export async function getLaunchData(id) {
   const { data } = await client.query({

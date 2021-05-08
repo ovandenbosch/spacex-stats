@@ -41,11 +41,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootswatch", "npm:4.6.0"],
             ["classnames", "npm:2.3.1"],
             ["graphql", "npm:15.5.0"],
-            ["moment", "npm:2.29.1"],
             ["next", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:10.2.0"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
-            ["react-moment", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:1.1.1"]
+            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -931,11 +929,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootswatch", "npm:4.6.0"],
             ["classnames", "npm:2.3.1"],
             ["graphql", "npm:15.5.0"],
-            ["moment", "npm:2.29.1"],
             ["next", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:10.2.0"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"],
-            ["react-moment", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:1.1.1"]
+            ["react-dom", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:17.0.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -2412,15 +2408,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["moment", [
-        ["npm:2.29.1", {
-          "packageLocation": "./.yarn/cache/moment-npm-2.29.1-787d9fdafd-86729013fe.zip/node_modules/moment/",
-          "packageDependencies": [
-            ["moment", "npm:2.29.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["ms", [
         ["npm:2.0.0", {
           "packageLocation": "./.yarn/cache/ms-npm-2.0.0-9e1101a471-1a230340cc.zip/node_modules/ms/",
@@ -3119,36 +3106,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-11bcf1267a.zip/node_modules/react-is/",
           "packageDependencies": [
             ["react-is", "npm:16.13.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["react-moment", [
-        ["npm:1.1.1", {
-          "packageLocation": "./.yarn/cache/react-moment-npm-1.1.1-000cec2e5b-f32240af16.zip/node_modules/react-moment/",
-          "packageDependencies": [
-            ["react-moment", "npm:1.1.1"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:1.1.1", {
-          "packageLocation": "./.yarn/$$virtual/react-moment-virtual-2b3d226c9e/0/cache/react-moment-npm-1.1.1-000cec2e5b-f32240af16.zip/node_modules/react-moment/",
-          "packageDependencies": [
-            ["react-moment", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:1.1.1"],
-            ["@types/moment", null],
-            ["@types/prop-types", null],
-            ["@types/react", null],
-            ["moment", "npm:2.29.1"],
-            ["prop-types", null],
-            ["react", "npm:17.0.2"]
-          ],
-          "packagePeers": [
-            "@types/moment",
-            "@types/prop-types",
-            "@types/react",
-            "moment",
-            "prop-types",
-            "react"
           ],
           "linkType": "HARD",
         }]

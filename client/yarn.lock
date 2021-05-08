@@ -747,11 +747,9 @@ __metadata:
     bootswatch: ^4.6.0
     classnames: ^2.3.1
     graphql: ^15.5.0
-    moment: ^2.29.1
     next: 10.2.0
     react: 17.0.2
     react-dom: 17.0.2
-    react-moment: ^1.1.1
   languageName: unknown
   linkType: soft
 
@@ -2006,13 +2004,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"moment@npm:^2.29.1":
-  version: 2.29.1
-  resolution: "moment@npm:2.29.1"
-  checksum: 86729013febf7160de5b93da69273dd304d674b0224f9544b3abd09a87671ddd2cdd57598261ce57588910d63747ffd5590965e83c790d8bf327083c0e0a06e0
-  languageName: node
-  linkType: hard
-
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -2598,17 +2589,6 @@ fsevents@~2.3.1:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
-  languageName: node
-  linkType: hard
-
-"react-moment@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "react-moment@npm:1.1.1"
-  peerDependencies:
-    moment: ^2.29.0
-    prop-types: ^15.7.0
-    react: ^16.0 || ^17.0.0
-  checksum: f32240af16b783d9d3f565a170f21f9953ed2fa0ec0a065363138038c0d2239b63f8c4636dddda464551b34df3ed428942d70fed11a1ac3b6728c43f504a77ab
   languageName: node
   linkType: hard
 

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import Moment from "react-moment";
+
 import Link from "next/link";
 
 export default function LaunchItem({
@@ -21,7 +21,7 @@ export default function LaunchItem({
             </span>
           </h4>
           <p>
-            Date: <Moment format="YYYY-MM-DD HH:mm">{launch_date_local}</Moment>
+            Date: {launch_date_local}
           </p>
         </div>
         <div className="col-md-3">
