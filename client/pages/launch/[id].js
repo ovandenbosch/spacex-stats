@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const { data } = await client.query({
+  const { data, error } = await client.query({
     query: gql`
       query LaunchesQuery {
         launches {
@@ -73,6 +73,8 @@ export async function getStaticPaths() {
       }
     `,
   });
+
+  if (error) console.log(error)
 
   const paths = await data.launches.map((element) => ({
     params: { id: element.id.toString() },

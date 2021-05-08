@@ -1,12 +1,9 @@
 import Head from "next/head";
 import { gql } from "@apollo/client";
 import Launches from "../components/Launches";
-import { ApolloClient, InMemoryCache } from "@apollo/client";
+import client from '../apollo-client'
 
-const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
-  cache: new InMemoryCache(),
-});
+
 
 export default function Home({ data, loading }) {
   return (

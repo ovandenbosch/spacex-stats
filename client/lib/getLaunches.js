@@ -7,7 +7,7 @@ const client = new ApolloClient({
 });
 
 export async function getLaunchData(id) {
-  const { data } = await client.query({
+  const { data, error } = await client.query({
     variables: {
       id,
     },
@@ -27,6 +27,8 @@ export async function getLaunchData(id) {
       }
     `,
   });
+
+  if (error) console.log(error)
 
   return {
     data,
