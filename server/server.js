@@ -2,7 +2,6 @@ const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
 const cors = require('cors')
 const schema = require("./schema");
-const expressPlayground = require("graphql-playground-middleware-express").default
 
 const app = express();
 
@@ -17,9 +16,6 @@ app.use(
 );
 
 /// Testqs
-
-// Playground route
-app.get("/playground", expressPlayground({ endpoint: "graphql"}));
 
 
 const PORT = process.env.PORT || 5000;

@@ -97,45 +97,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:2.10.2":
-  version: 2.10.2
-  resolution: "@vercel/build-utils@npm:2.10.2"
-  checksum: 872da744593d5c170cb358f6e132f9209bf2ba00c4b5ef7bf82516a9057310bcb17956313eacff003c182b32c26675a2d844582632604dc358c1a583da900214
-  languageName: node
-  linkType: hard
-
-"@vercel/go@npm:1.2.2":
-  version: 1.2.2
-  resolution: "@vercel/go@npm:1.2.2"
-  checksum: a5d058024c0079bd712fc6b8d28b43f3023c8750192a06f739d59a81d53a9928f3f679e7b3a0e1abcbfc950a4a0acc590409d752cc623c7b593896b71be077a0
-  languageName: node
-  linkType: hard
-
-"@vercel/node@npm:1.10.0":
-  version: 1.10.0
-  resolution: "@vercel/node@npm:1.10.0"
-  dependencies:
-    "@types/node": "*"
-    ts-node: 8.9.1
-    typescript: 3.9.3
-  checksum: 9ab1f5464a9e50290523c644f81111fb5fd8d2bc05047e4555c1ebc5b18b4e407a84c7b54571563b9b1e370cfc40ac9a7fd18a59e4e95ff5adb88bbb5726ad99
-  languageName: node
-  linkType: hard
-
-"@vercel/python@npm:2.0.1":
-  version: 2.0.1
-  resolution: "@vercel/python@npm:2.0.1"
-  checksum: 989b3ed2c4a33309b1e3a143e78bdde4f3d5ca0fb66d7ad5b6842245fbb073450a361f9a096fd0339aab0965ed9f33eed9740bc1c8893c89e78b11b144972e25
-  languageName: node
-  linkType: hard
-
-"@vercel/ruby@npm:1.2.6":
-  version: 1.2.6
-  resolution: "@vercel/ruby@npm:1.2.6"
-  checksum: d6778d6b1bfb8b38db55a3a5257a5ebb0705a617fb9c615cdb0ca47bc522c8d73053fea432c1205148c44823ef46e55b8b7433794f4dcc9eb8576b37d7272c62
-  languageName: node
-  linkType: hard
-
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -265,13 +226,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arg@npm:^4.1.0":
-  version: 4.1.3
-  resolution: "arg@npm:4.1.3"
-  checksum: 81b3b40b1529c4fbf75b12f7c3e6fb2dcce9e78072063babc169de9b4f40777788f3d2b04380f659ef676a756e03ccfbfe78adf4477353bda906295fa69dab89
-  languageName: node
-  linkType: hard
-
 "array-flatten@npm:1.1.1":
   version: 1.1.1
   resolution: "array-flatten@npm:1.1.1"
@@ -352,13 +306,6 @@ __metadata:
   dependencies:
     fill-range: ^7.0.1
   checksum: f3493181c3e91a1333d3c9afc9b3263a3f62f4ced0b033c372efc1373b48a7699557f4e04026b232a8556e043ca5360a9d3008c33852350138d4b0ea57558b8d
-  languageName: node
-  linkType: hard
-
-"buffer-from@npm:^1.0.0":
-  version: 1.1.1
-  resolution: "buffer-from@npm:1.1.1"
-  checksum: 540ceb79c4f5bfcadaabbc18324fa84c50dc52905084be7c03596a339cf5a88513bee6831ce9b36ddd046fab09257a7c80686e129d0559a0cfd141da196ad956
   languageName: node
   linkType: hard
 
@@ -553,13 +500,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.20.3":
-  version: 2.20.3
-  resolution: "commander@npm:2.20.3"
-  checksum: b73428e97de7624323f81ba13f8ed9271de487017432d18b4da3f07cfc528ad754bbd199004bd5d14e0ccd67d1fdfe0ec8dbbd4c438b401df3c4cc387bfd1daa
-  languageName: node
-  linkType: hard
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -661,13 +601,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssfilter@npm:0.0.10":
-  version: 0.0.10
-  resolution: "cssfilter@npm:0.0.10"
-  checksum: 0a5cdc209e35ff0db9b0271846162ad9c0fdd7e612b217b88cfe6f1da5428b156369f17bab7f5f32f9d49b66daec912c188ef836735f499d87cafd824f3e9308
-  languageName: node
-  linkType: hard
-
 "date-fns@npm:^2.16.1":
   version: 2.21.3
   resolution: "date-fns@npm:2.21.3"
@@ -746,13 +679,6 @@ __metadata:
   version: 1.0.4
   resolution: "destroy@npm:1.0.4"
   checksum: 5a516fc5a8a8089eecdac11da2339353542be7a71102dc5a1372ef6161501bf5c1ee59ff9f8a3f5f14cc8c88594d606f855f816d46a228ee5e0e5cb2b543534b
-  languageName: node
-  linkType: hard
-
-"diff@npm:^4.0.1":
-  version: 4.0.2
-  resolution: "diff@npm:4.0.2"
-  checksum: 81b5cd7ddde6f0ba2a532d434cfdca365aedd6cc62bb133e851e66e071d40382a30924a07c1034bd3d5a2e332146f64514b73c06fe2ebc0490a67f0c98da79fb
   languageName: node
   linkType: hard
 
@@ -1113,26 +1039,6 @@ fsevents@~2.3.1:
   version: 4.2.6
   resolution: "graceful-fs@npm:4.2.6"
   checksum: 84d39c7756892553da990a9db7e45f844b3309b37b5a00174cbb4748476f2250c54f24594d4d252f64f085c65c2fdac7c809419bf6d55f0e6e42eb07ac0f5bf2
-  languageName: node
-  linkType: hard
-
-"graphql-playground-html@npm:^1.6.29":
-  version: 1.6.29
-  resolution: "graphql-playground-html@npm:1.6.29"
-  dependencies:
-    xss: ^1.0.6
-  checksum: 3958fd648b255ee3605c2e5c4899cc2b4eb593d4538dfaf82886fa032ee4bf81a52860adfd8ec6b8fba5af23397270dba96d51efae26a20e3f79c3af86775563
-  languageName: node
-  linkType: hard
-
-"graphql-playground-middleware-express@npm:^1.7.22":
-  version: 1.7.22
-  resolution: "graphql-playground-middleware-express@npm:1.7.22"
-  dependencies:
-    graphql-playground-html: ^1.6.29
-  peerDependencies:
-    express: ^4.16.2
-  checksum: aa3c7cdca1f429bc6b6c2597290738141b015cf9a04ea859c2d9b58a825534dc677e4b1db51f9a0e12b76c447314301038d9a10a0bde2c1efe0a24201ee1b3e9
   languageName: node
   linkType: hard
 
@@ -1591,13 +1497,6 @@ fsevents@~2.3.1:
   dependencies:
     semver: ^6.0.0
   checksum: 54b6f186c209c1b133d0d1710e6b04c41ebfcb0dac699e5a369ea1223f22c0574ef820b91db37cae6c245f5bda8aff9bfec94f6c23e7d75970446b34a58a79b0
-  languageName: node
-  linkType: hard
-
-"make-error@npm:^1.1.1":
-  version: 1.3.6
-  resolution: "make-error@npm:1.3.6"
-  checksum: 2c780bab8409b865e8ee86697c599a2bf2765ec64d21eb67ccda27050e039f983feacad05a0d43aba3c966ea03d305d2612e94fec45474bcbc61181f57c5bb88
   languageName: node
   linkType: hard
 
@@ -2391,23 +2290,6 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.17":
-  version: 0.5.19
-  resolution: "source-map-support@npm:0.5.19"
-  dependencies:
-    buffer-from: ^1.0.0
-    source-map: ^0.6.0
-  checksum: 59d4efaae97755155b078413ecba63517e3ef054cc7ab767bbd30e6f3054be2ae8e8f5cce7eef53b7eb93e98fe27a58dd8f5e7abfb13144ba420ddaf5267bbb2
-  languageName: node
-  linkType: hard
-
-"source-map@npm:^0.6.0":
-  version: 0.6.1
-  resolution: "source-map@npm:0.6.1"
-  checksum: 8647829a0611724114022be455ca1c8a2c8ae61df81c5b3667d9b398207226a1e21174fb7bbf0b4dbeb27ac358222afb5a14f1c74a62a62b8883b012e5eb1270
-  languageName: node
-  linkType: hard
-
 "spacex-stats@workspace:.":
   version: 0.0.0-use.local
   resolution: "spacex-stats@workspace:."
@@ -2418,9 +2300,7 @@ resolve@^1.10.0:
     express: ^4.17.1
     express-graphql: ^0.12.0
     graphql: ^15.5.0
-    graphql-playground-middleware-express: ^1.7.22
     nodemon: ^2.0.7
-    vercel: ^22.0.1
   languageName: unknown
   linkType: soft
 
@@ -2667,26 +2547,6 @@ resolve@^1.10.0:
   languageName: node
   linkType: hard
 
-"ts-node@npm:8.9.1":
-  version: 8.9.1
-  resolution: "ts-node@npm:8.9.1"
-  dependencies:
-    arg: ^4.1.0
-    diff: ^4.0.1
-    make-error: ^1.1.1
-    source-map-support: ^0.5.17
-    yn: 3.1.1
-  peerDependencies:
-    typescript: ">=2.7"
-  bin:
-    ts-node: dist/bin.js
-    ts-node-script: dist/bin-script.js
-    ts-node-transpile-only: dist/bin-transpile.js
-    ts-script: dist/bin-script-deprecated.js
-  checksum: 8b365cd64448b6a7904f910d5d23d25ffc5a89a7dad9cfae9cf6c6cda464b08ecf10601aadc6db04155deecd9b64546745c614c3d4180d1d19ad85fdfb5f14d3
-  languageName: node
-  linkType: hard
-
 "tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -2724,26 +2584,6 @@ resolve@^1.10.0:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: e6e0e6812acc3496612d81abe026bb6c71bfc0f3daa00716a3236fe37c46a81508de8306df8a29ae81e2a2c4293b6b8067c77b65003e0022134d544902b9acec
-  languageName: node
-  linkType: hard
-
-typescript@3.9.3:
-  version: 3.9.3
-  resolution: "typescript@npm:3.9.3"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: f05e6f1c50c635bd7afc95fbc9eb704042b5bec9a77b9c86ddc0c56650c928617d608b9ec9aa468d7b4cf14ac1ea5f540c540c725005a179b54a86665abd9a55
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@3.9.3#builtin<compat/typescript>":
-  version: 3.9.3
-  resolution: "typescript@patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=a45b0e"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 54b2889e3dce3cdb00e652c207e0d85b4cecd902dae3c999c2f860634ec87029426121b9a7c2b83d89466eff42dc26b2a3cda033fa67b1723d6e00a0dc54ea4c
   languageName: node
   linkType: hard
 
@@ -2787,27 +2627,6 @@ typescript@3.9.3:
   version: 1.0.0
   resolution: "unpipe@npm:1.0.0"
   checksum: ba244e8bf640475b2143af95be5d71353cd4d238d63abf5dfe700c67841f066eb0819fc60dee7f2348ef647a5644a06ba024b9a0ab6d399fc07a05eb72a30ac7
-  languageName: node
-  linkType: hard
-
-"update-notifier@npm:4.1.0":
-  version: 4.1.0
-  resolution: "update-notifier@npm:4.1.0"
-  dependencies:
-    boxen: ^4.2.0
-    chalk: ^3.0.0
-    configstore: ^5.0.1
-    has-yarn: ^2.1.0
-    import-lazy: ^2.1.0
-    is-ci: ^2.0.0
-    is-installed-globally: ^0.3.1
-    is-npm: ^4.0.0
-    is-yarn-global: ^0.3.0
-    latest-version: ^5.0.0
-    pupa: ^2.0.1
-    semver-diff: ^3.1.1
-    xdg-basedir: ^4.0.0
-  checksum: 2d35bb8785da43c247c5c7b7734c50c040378de61569afbfc22681b46066240ccdf717b38a62483926f6452f26a547418768627a2f0dede70ca6f4f0b5c78309
   languageName: node
   linkType: hard
 
@@ -2869,23 +2688,6 @@ typescript@3.9.3:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 591f059f727ac1ba0d97cb7767f8583a03fcbb07db7be2b7dce838ede520ec0e958a41cb19077054769077fdc49a9b9a2dc391c83426bfee89c054b8cc7404bf
-  languageName: node
-  linkType: hard
-
-"vercel@npm:^22.0.1":
-  version: 22.0.1
-  resolution: "vercel@npm:22.0.1"
-  dependencies:
-    "@vercel/build-utils": 2.10.2
-    "@vercel/go": 1.2.2
-    "@vercel/node": 1.10.0
-    "@vercel/python": 2.0.1
-    "@vercel/ruby": 1.2.6
-    update-notifier: 4.1.0
-  bin:
-    vc: dist/index.js
-    vercel: dist/index.js
-  checksum: d2d01c40db046a3bafab65700b92c5247f48b03be4e31af119a4d7c06dc50f1e21227cf144a1ab3c8f9e3c4cddc2322375e506d3250e66b80f779779c82b7781
   languageName: node
   linkType: hard
 
@@ -2955,18 +2757,6 @@ typescript@3.9.3:
   languageName: node
   linkType: hard
 
-"xss@npm:^1.0.6":
-  version: 1.0.9
-  resolution: "xss@npm:1.0.9"
-  dependencies:
-    commander: ^2.20.3
-    cssfilter: 0.0.10
-  bin:
-    xss: bin/xss
-  checksum: 95544f369dd740199e054810ca6124caa6fc20d806708a6dade6ca2c3277072c78197439213c1d317c9906558bec5ce8241ea433e6a0410d6ea721b86452dcb2
-  languageName: node
-  linkType: hard
-
 "y18n@npm:^5.0.5":
   version: 5.0.8
   resolution: "y18n@npm:5.0.8"
@@ -3000,12 +2790,5 @@ typescript@3.9.3:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: a79ce1f043021cd645de1ffebb6149541d382ba68f4a6b5eca5d2ad65af51893371bbd78e240dc3b6cf0cbb419511ba5bda715dec992e4266e6863ea49f14feb
-  languageName: node
-  linkType: hard
-
-"yn@npm:3.1.1":
-  version: 3.1.1
-  resolution: "yn@npm:3.1.1"
-  checksum: bff63b80568d80c711670935427494dde47cdf97e8b04196b140ce0af519c81c5ee857eddad0caa8b422dd65aea0157bbfaacbb1546bebba623f0f383d5d9ae5
   languageName: node
   linkType: hard
