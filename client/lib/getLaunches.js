@@ -2,12 +2,13 @@ import { gql } from "@apollo/client";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
+  ssrMode: true,
   uri: "http://localhost:5000/graphql",
   cache: new InMemoryCache(),
 });
 
 export async function getLaunchData(id) {
-  const { data } = await client.query({
+  const { data, error } = await client.query({
     variables: {
       id,
     },
@@ -28,6 +29,7 @@ export async function getLaunchData(id) {
     `,
   });
 
+  if (error) console.log(error)
 
   return {
     data,
